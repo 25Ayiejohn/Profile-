@@ -223,7 +223,7 @@
 
         /* Hero Section */
         .hero {
-            margin-top:100px;
+            margin-top:150px;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -242,8 +242,6 @@
 
         .profile-image {
             width: 100%;
-            max-width:300px;
-            height: 300px;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -252,9 +250,9 @@
         }
 
         .profile-image img {
-            width: 100%
-            max-width:300px;
-            height: 300px;
+            width: 100%;
+            max-width:350px;
+            height: 350px;
             object-fit: cover;
             
         }
@@ -1612,4 +1610,5 @@
             background: linear-gradient(45deg, #ff00ff, #00f5ff);
 
         }
+
 
