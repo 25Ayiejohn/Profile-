@@ -87,6 +87,7 @@
         nav.scrolled {
             background: rgba(0, 0, 0, 0.9);
             padding: 15px 50px;
+            position: fixed;
         }
 
         .nav-container {
@@ -145,7 +146,8 @@
             transition: all 0.3s ease;
         }
 
-        .nav-links a:hover::after,.nav-links li:first-child a:after {
+        .nav-links a:hover::after,
+        .nav-links li:first-child a:after {
             width: 100%;
             left: 0;
         }
@@ -222,45 +224,29 @@
         }
 
         /* Hero Section */
-        .hero {
-            margin-top:150px;
+        .hero{
+            display: flex;
+            justify-content: center;
             height: 100vh;
+            padding: 1rem 2rem;
+            margin-bottom: 2.5rem;
+        }
+        .hero-content{
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
+            gap: 2rem;
         }
-
-        .hero-content {
-            animation: fadeInUp 1s ease-out;
+        .hero-content img{
+            width: 50%;
+            max-width: 350px;
+        }
+        .text-con{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 30px;
+            text-align: left;
         }
 
-        .profile-image {
-            width: 100%;
-            height:fit-content;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem
-        }
-
-        .profile-image img {
-            width: 100%;
-            max-width:350px;
-            height: 350px;
-            object-fit: cover;
-            
-        }
-
-        
-
-        .hero h1 {
+        .text-con h1 {
             font-size: 4rem;
             margin-bottom: 20px;
             background: linear-gradient(45deg, #00f5ff, #ff00ff, #ffff00);
@@ -282,16 +268,16 @@
             }
         }
 
-        .hero p {
+        .hero .text-con p {
             font-size: 1.5rem;
             margin-bottom: 30px;
             opacity: 0;
             animation: fadeInUp 1s ease-out 0.5s forwards;
             max-width: 600px;
         }
-
         .cta-button {
-            display: inline-block;
+            display: block;
+            width: fit-content;
             padding: 15px 40px;
             background: linear-gradient(45deg, #00f5ff, #ff00ff);
             color: white;
@@ -1436,7 +1422,18 @@
             .nav-links {
                 display: none;
             }
-
+            .hero-content{
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-image img{
+                width: 100%;
+                max-width: 350px;
+            }
+            .text-con{
+                align-items: center;
+                text-align: center;
+            }
             .mobile-menu-btn {
                 display: flex;
             }
@@ -1453,10 +1450,7 @@
                 font-size: 1.2rem;
             }
 
-            .profile-image {
-                width: 150px;
-                height: 150px;
-            }
+            
 
             .section {
                 padding: 50px 20px;
@@ -1611,7 +1605,3 @@
             background: linear-gradient(45deg, #ff00ff, #00f5ff);
 
         }
-
-
-
-
