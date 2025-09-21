@@ -242,6 +242,7 @@
 
         .profile-image {
             width: 100%;
+            height:fit-content;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -1610,6 +1611,7 @@
             background: linear-gradient(45deg, #ff00ff, #00f5ff);
 
         }
+
 
 
 
