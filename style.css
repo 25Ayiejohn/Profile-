@@ -74,7 +74,7 @@
 
         /* Navigation */
         nav {
-            position: fixed;
+            position: relative;
             top: 0;
             width: 100%;
             padding: 20px 50px;
@@ -1610,5 +1610,6 @@
             background: linear-gradient(45deg, #ff00ff, #00f5ff);
 
         }
+
 
 
